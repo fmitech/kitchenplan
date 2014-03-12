@@ -101,7 +101,7 @@ end.parse!
 # Bootstrapping dependencies
 sudo "sudo gem install bundler --no-rdoc --no-ri" unless Kernel.system "gem query --name-matches '^bundler$' --installed > /dev/null 2>&1"
 normaldo "rm -rf .bundle/config"
-normaldo "bundle install --binstubs bin --path .bundle --deployment --local --no-cache #{(options[:debug] ? '--verbose' : '--quiet')}"
+normaldo "ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future bundle install --binstubs bin --path .bundle --deployment --local --no-cache #{(options[:debug] ? '--verbose' : '--quiet')}"
 
 # Add local deps to the load path.
 require "rubygems"
