@@ -1,5 +1,16 @@
 # Kitchenplan
 
+##TL;DR
+
+Make sure Mavericks is installed. Make sure your username matches a `yml` file under `config/people` (i.e. if your username is _tdurden_, make sure there is a `tdurden.yml` file under `config/people`).
+
+Open a terminal, copy/paste the following two lines
+
+```bash
+ $ export KITCHENPLAN_REPO=https://github.com/fmitech/kitchenplan.git
+ $ ruby -e "$(curl -fsSL https://raw.github.com/fmitech/kitchenplan/version2/go)"
+ ```
+
 ## Why Kitchenplan?
 
 Read about this project and it's values and goals in this blog post: [http://vanderveer.be/blog/2013/04/14/presenting-kitchenplan/](http://vanderveer.be/blog/2013/04/14/presenting-kitchenplan/)
@@ -25,8 +36,8 @@ If the repo for your organisation is private, continue with setting up your SSH 
 The `KITCHENPLAN_REPO` environment variable can be set before installation to customize what git repository is used for kitchen plan.
 
 ```bash
-$ export KITCHENPLAN_REPO=https://github.com/mycompany/kitchenplan.git
-$ ruby -e "$(curl -fsSL https://raw.github.com/kitchenplan/kitchenplan/version2/go)"
+$ export KITCHENPLAN_REPO=https://github.com/fmitech/kitchenplan.git
+$ ruby -e "$(curl -fsSL https://raw.github.com/fmitech/kitchenplan/version2/go)"
 ```
 
 ### Custom Recipes
