@@ -14,7 +14,7 @@ recipes:
         - osxdefaults::set_a_blazingly_fast_keyboard_repeat_rate
 attributes:
     git:
-        name: Julian Villella
+        name: Dan Bird
     sublime_text:
         preferences:
             font_face: "Monaco"
